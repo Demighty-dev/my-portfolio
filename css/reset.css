@@ -1,0 +1,154 @@
+@font-face {
+    font-family: outfit;
+    font-weight: 300;
+    font-style: normal;
+    src: url(../assets/Outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+:root {
+    --container-width-lg: 80%;
+    --container-width-sm: 94%;
+
+    --radius-1: 2rem;
+    --radius-2: 1.2rem;
+    --radius-3: 0.8rem;
+    --radius-4: 0.5rem;
+    --radius-5: 0.3rem;
+
+
+
+    --transition: all 300ms ease;
+
+    --primary-hue: 358;
+    --color-primary: hsl(var(--primary-hue), 87%, 44%);
+    --color-nav-bg: hsla(var(--primary-hue), 0%, 100%, 0.4);
+    --color-gray-100: hsl(var(--primary-hue), 0%, 100%);
+    --color-gray-200: hsl(var(--primary-hue), 0%, 95%);
+    --color-gray-300: hsl(var(--primary-hue), 0%, 85%);
+    --color-gray-400: hsl(var(--primary-hue), 0%, 70%);
+    --color-gray-500: hsl(var(--primary-hue), 0%, 55%);
+    --color-gray-600: hsl(var(--primary-hue), 0%, 40%);
+    --color-gray-700: hsl(var(--primary-hue), 0%, 25%);
+    --color-gray-800: hsl(var(--primary-hue), 0%, 15%);
+    --color-gray-900: hsl(var(--primary-hue), 0%, 5%);
+
+
+    --dark-gray-clr: #808080;
+    --darker-gray-clr: #464646;
+    --light-gray-clr: #e3e5e3;
+    --orange-clr: #ffa500;
+    --darkred-clr: #8D0000;
+
+
+    --box-shadow: 0 0 5px #c0c0c0;
+    --sidebar-box-shadow: 1px 0 3px #c0c0c0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffeb;
+    font-family: outfit;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--color-gray-100);
+    color: var(--color-gray-800);
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+p, a, figcaption {
+    font-size: .85rem;
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin-inline: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.btn {
+    background: var(--color-gray-200);
+    color: var(--color-gray-900);
+    font-weight: 500;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: var(--radius-3);
+    width: fit-content;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-sm {
+    padding: 0.4rem 1rem;
+    font-weight: 400;
+    border-radius: var(--radius-4);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn:hover {
+    background: var(--color-gray-900);
+    color: var(--color-gray-100);
+}
+
+section {
+    padding: 9rem 0;
+}
+
+section > h1, section > p {
+    width: 50%;
+    text-align: center;
+    margin-inline: auto;
+}
+
+section > h1 {
+    margin-bottom: 0.5rem;
+}
+
+section:nth-child(odd) {
+    background: var(--color-gray-200);
+}
+
+
+
+
