@@ -206,3 +206,272 @@ header {
 .aboutDetails .btn i {
     font-size: 1.2rem;
 }
+
+
+
+/*======================== SERVICES ========================*/
+
+
+.serviceContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    margin-top: 4rem;
+}
+
+.servicesLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.servicesLeft li {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-4);
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.servicesLeft li:hover, .servicesLeft li.active {
+    background: var(--color-gray-200);
+}
+
+.servicesLeft li span i {
+    background: var(--color-primary);
+    color: var(--color-gray-100);
+    padding: 0.9375rem;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.servicesLeft li h3 {
+    margin-bottom: 0.5rem;
+}
+
+.servicesLeft h3 {
+    margin-bottom: 1rem;
+}
+
+.servicesRight {
+    border-left: 1px solid var(--color-gray-300);
+    padding-left: 6rem;
+}
+
+.servicesRight {
+    margin-bottom: 1.5rem;
+}
+
+.servicesRight p {
+    margin-bottom: .8rem;
+}
+
+
+/*======================== PROJECTS ========================*/
+
+.projectsCategories {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 2.5rem;
+}
+
+.projectsCategories li {
+    background: var(--color-gray-100);
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radius-4);
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.projectsCategories li:hover,
+.projectsCategories li.active {
+    background: var(--color-primary);
+    color: var(--color-gray-100);
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 3.5rem;
+}
+
+.project {
+    background: var(--color-gray-100);
+    padding: 1.4rem;
+    border-radius: var(--radius-2);
+    transition: var(--transition);
+    /* mixitup animations */
+    opacity: 0;
+    animation: identifier 1.5s ease forwards;
+}
+
+@keyframes identifier {
+    to {
+        opacity: 1;
+    }
+}
+
+.project:hover {
+    box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.projectImage {
+    height: auto;
+    max-height: 12rem;
+    margin-bottom: 1.5rem;
+    border-radius: var(--radius-4);
+    overflow: hidden;
+}
+
+.project p {
+    margin: 0.5rem 0 1.5rem;
+}
+
+.projectCta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/*======== TESTIMONIALS ========*/
+.swiper {
+    width: var(--container-width-lg);
+    margin: 9rem auto;
+}
+
+.swiper-wrapper {
+    margin-top: 4rem;
+
+    /* style pagination  */
+    padding-bottom: 3rem;
+    height: fit-content;
+}
+
+.swiper-slide {
+    background: var(--color-gray-200);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem 1.2rem;
+    height: fit-content;
+    cursor: default;
+    user-select: none;
+    transition: var(--transition);
+}
+
+.swiper-slide:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.swiper_client {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.swiper_client-avatar {
+    width: 2.5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-primary) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

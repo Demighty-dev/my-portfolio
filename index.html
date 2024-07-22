@@ -11,6 +11,9 @@
     <!-- ---- assets ----- -->
      <link rel="icon" href="assets/images/favicon.jpg" type="image/jpg">
      <link rel="stylesheet" href="assets/fa-icons/css/all.css">
+     
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <title>My PortFolio Website</title>
 </head>
@@ -105,9 +108,251 @@
     <!-- ---- About Section Ends----- -->
     
 
+    
+    <!-- ---- Services Section Starts----- -->
+    <section class="services" id="services">
+        <h1>Services</h1>
+        <p>Adipiscing elit uasi illo odio culpa molestias dolores cum beatae.</p>
+        <div class="container serviceContainer">
+            <ul class="servicesLeft">
+                <li class="serviceItem frontend">
+                    <span><i class="fa fa-desktop"></i></span>
+                    <div>
+                        <h3>Frontend</h3>
+                        <p>14 Projects</p>
+                    </div>
+                </li>
+
+                    <li class="serviceItem backend">
+                    <span><i class="fa fa-server"></i></span>
+                    <div>
+                        <h3>Backend</h3>
+                        <p>11 Projects</p>
+                    </div>
+                </li>
+
+                <li class="serviceItem fullstack">
+                    <span><i class="fa fa-laptop-code"></i></span>
+                    <div>
+                        <h3>Fullstack</h3>
+                        <p>28 Projects</p>
+                    </div>
+                </li>
+            </ul>
+            <article class="servicesRight">
+                <h3>Frontend Development</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore iusto provident illo, quidem quae laudantium eum labore eos tempora inventore.</p> -->
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed facilis perspiciatis, velit dolore, quos minima voluptatibus autem enim error quae laboriosam delectus vel sequi dicta tenetur, aliquam nulla harum! Illo, quam a hic dolores ducimus aut laboriosam praesentium quasi?</p> -->
+                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore iusto provident illo, quidem quae laudantium eum labore eos tempora inventore.</p> -->
+            </article>
+        </div>
+    </section>
+     <!-- ---- Services Section Ends----- -->
+    
+
+     <!-- ---- projects Section Starts----- -->
+     <section class="projects" id="projects">
+        <h1>Recent Projects</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipiscing elit. Minus aut consectetur repellendus cumque</p>
+        <ul class="projectsCategories">
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".frontend">Frontend</li>
+            <li data-filter=".backend">Backend</li>
+            <li data-filter=".fullstack">Fullstack</li>
+        </ul>
+        <div class="container projectsContainer">
+            <article class="project mix fullstack" data-order="1">
+                <div class="projectImage">
+                    <img src="./assets/images/project1.jpg" alt="Project Image One">
+                </div>
+                <h3>Project One Title (Fullstack)</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Numquam. Vel eum aliquid quibusdam odit nam eius quos exercitationem in nesciunt tempora, debitis quasi veritatis sed laboriosam accusamus culpa possimus.</p>
+                <div class="projectCta">
+                    <a href="https://egattor.com" class="btn btn-sm btn-primary" target="_blank">Demo</a>
+                    <a href="https://github.com" class="btn btn-sm" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix frontend"  data-order="2">
+                <div class="projectImage">
+                    <img src="./assets/images/project2.jpg" alt="Project Image One">
+                </div>
+                <h3>Project Two Title (Frontend)</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Numquam. Vel eum aliquid quibusdam odit nam eius quos exercitationem in nesciunt tempora, debitis quasi veritatis sed laboriosam accusamus culpa possimus.</p>
+                <div class="projectCta">
+                    <a href="https://egattor.com" class="btn btn-sm btn-primary" target="_blank">Demo</a>
+                    <a href="https://github.com" class="btn btn-sm" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix fullstack"  data-order="3">
+                <div class="projectImage">
+                    <img src="./assets/images/project3.jpg" alt="Project Image One">
+                </div>
+                <h3>Project Three Title (Fullstack)</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Numquam. Vel eum aliquid quibusdam odit nam eius quos exercitationem in nesciunt tempora, debitis quasi veritatis sed laboriosam accusamus culpa possimus.</p>
+                <div class="projectCta">
+                    <a href="https://egattor.com" class="btn btn-sm btn-primary" target="_blank">Demo</a>
+                    <a href="https://github.com" class="btn btn-sm" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix frontend"  data-order="4">
+                <div class="projectImage">
+                    <img src="./assets/images/project4.jpg" alt="Project Image One">
+                </div>
+                <h3>Project Four Title (Frontend)</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Numquam. Vel eum aliquid quibusdam odit nam eius quos exercitationem in nesciunt tempora, debitis quasi veritatis sed laboriosam accusamus culpa possimus.</p>
+                <div class="projectCta">
+                    <a href="https://egattor.com" class="btn btn-sm btn-primary" target="_blank">Demo</a>
+                    <a href="https://github.com" class="btn btn-sm" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix frontend"  data-order="5">
+                <div class="projectImage">
+                    <img src="./assets/images/project5.jpg" alt="Project Image One">
+                </div>
+                <h3>Project Five Title (Frontend)</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Numquam. Vel eum aliquid quibusdam odit nam eius quos exercitationem in nesciunt tempora, debitis quasi veritatis sed laboriosam accusamus culpa possimus.</p>
+                <div class="projectCta">
+                    <a href="https://egattor.com" class="btn btn-sm btn-primary" target="_blank">Demo</a>
+                    <a href="https://github.com" class="btn btn-sm" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix backend"  data-order="6">
+                <div class="projectImage">
+                    <img src="./assets/images/project6.jpg" alt="Project Image One">
+                </div>
+                <h3>Project Six Title (Backend)</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Numquam. Vel eum aliquid quibusdam odit nam eius quos exercitationem in nesciunt tempora, debitis quasi veritatis sed laboriosam accusamus culpa possimus.</p>
+                <div class="projectCta">
+                    <a href="https://egattor.com" class="btn btn-sm btn-primary" target="_blank">Demo</a>
+                    <a href="https://github.com" class="btn btn-sm" target="_blank">GitHub</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- ---- projects Section Ends----- -->
 
 
     
-    <script src="main.js"></script>
+    <!-- ---- Testimonials Section Starts----- -->
+    <section class="swiper">
+        <h1>What my clients say</h1>
+        <p>This is what my clients say about me and my work.</p>
+        <div class="swiper-wrapper">
+            <figure class="swiper-slide">
+                <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Ipsa enim nisi nostrum eaque 
+                    saepe velit labore rem, eveniet animi ea delectus voluptatem!
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="swiper_client-avatar">
+                        <img src="./assets/images/avatar1.jpg" alt="Client One">
+                    </div>
+                    <div class="swiper_client-details">
+                        <h5>Nana Ama McBrown</h5>
+                        <small>Actress</small>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="swiper-slide">
+                <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Ipsa enim nisi nostrum eaque 
+                    saepe velit labore rem, eveniet animi ea delectus voluptatem!
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="swiper_client-avatar">
+                        <img src="./assets/images/avatar1.jpg" alt="Client One">
+                    </div>
+                    <div class="swiper_client-details">
+                        <h5>Nana Ama McBrown</h5>
+                        <small>Actress</small>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="swiper-slide">
+                <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Ipsa enim nisi nostrum eaque 
+                    saepe velit labore rem, eveniet animi ea delectus voluptatem!
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="swiper_client-avatar">
+                        <img src="./assets/images/avatar1.jpg" alt="Client One">
+                    </div>
+                    <div class="swiper_client-details">
+                        <h5>Nana Ama McBrown</h5>
+                        <small>Actress</small>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="swiper-slide">
+                <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Ipsa enim nisi nostrum eaque 
+                    saepe velit labore rem, eveniet animi ea delectus voluptatem!
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="swiper_client-avatar">
+                        <img src="./assets/images/avatar1.jpg" alt="Client One">
+                    </div>
+                    <div class="swiper_client-details">
+                        <h5>Nana Ama McBrown</h5>
+                        <small>Actress</small>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="swiper-slide">
+                <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Ipsa enim nisi nostrum eaque 
+                    saepe velit labore rem, eveniet animi ea delectus voluptatem!
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="swiper_client-avatar">
+                        <img src="./assets/images/avatar1.jpg" alt="Client One">
+                    </div>
+                    <div class="swiper_client-details">
+                        <h5>Nana Ama McBrown</h5>
+                        <small>Actress</small>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="swiper-slide">
+                <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Ipsa enim nisi nostrum eaque 
+                    saepe velit labore rem, eveniet animi ea delectus voluptatem!
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="swiper_client-avatar">
+                        <img src="./assets/images/avatar1.jpg" alt="Client One">
+                    </div>
+                    <div class="swiper_client-details">
+                        <h5>Nana Ama McBrown</h5>
+                        <small>Actress</small>
+                    </div>
+                </div>
+            </figure>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- ---- Testimonials Section Ends----- -->
+    
+    
+
+
+    
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+    
+    
 </body>
 </html>
