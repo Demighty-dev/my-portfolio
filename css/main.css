@@ -20,7 +20,7 @@ nav {
 .navContainer {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .navLogo p{
@@ -455,9 +455,14 @@ li.mixitup-control-active{
     resize: none;
 }
 
-.contact__form input::placeholder,
-.contact__form textarea::placeholder {
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
     color: var(--color-gray-100) !important;
+}
+
+.contactForm .btn {
+    background: var(--color-gray-100);
+    color: var(--color-gray-900);
 }
 
 

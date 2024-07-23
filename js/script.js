@@ -34,9 +34,9 @@ const removeActiveClass = () => {
 document.addEventListener('DOMContentLoaded', function () {
     const containerEl = document.querySelector('.projectsContainer');
     var mixer = mixitup(containerEl, {
-        animation: {
-            enable: false
-        }
+      animation: {
+        enable: false
+      }
     });
 
     mixer.filter('*');
@@ -51,16 +51,16 @@ document.addEventListener('DOMContentLoaded', function() {
     spaceBetween: 30,
     loop: true,
     pagination: {
-        el: '.swiper-pagination',
-        clickable: true
+      el: '.swiper-pagination',
+      clickable: true
     },
     breakpoints: {
-        600: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        }
+      600: {
+          slidesPerView: 2
+      },
+      1024: {
+          slidesPerView: 3
+      }
     }
   });
 });
@@ -85,3 +85,33 @@ const closeNavHandler = () => {
 
 navOpenBtn.addEventListener('click', openNavHandler);
 navCloseBtn.addEventListener('click', closeNavHandler);
+
+// close nav menu on click of nav link on small screens
+const navItems = navMenu.querySelectorAll('a');
+if (window.innerWidth < 768) {
+  navItems.forEach(item => {
+      item.addEventListener('click', closeNavHandler)
+  })
+}
+
+
+//======================= THEME TOGGLE (light & dark mode) =======================
+const themeBtn = document.querySelector('.navThemeBtn');
+themeBtn.addEventListener('click', () => {
+    let bodyClass = document.body.className;
+    if (!bodyClass) {
+        bodyClass = 'dark';
+        document.body.className = bodyClass;
+        // change toggle icon
+        themeBtn.innerHTML = "<i class='ri-sun-line'></i>";
+        //Save theme to local storage
+        window.localStorage.setItem('theme', bodyClass);
+    } else {
+        bodyClass = '';
+        document.body.className = bodyClass;
+        themeBtn.innerHTML = "<i class='ri-moon-line'></i>";
+        //Save theme to local storage
+        window.localStorage.setItem('theme', bodyClass);
+    }
+});
+

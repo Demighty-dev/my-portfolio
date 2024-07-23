@@ -19,6 +19,8 @@
         width: var(--container-width-sm);
     }
 
+    /* NAV SECTION  */
+
     .navMenu {
         position: fixed;
         right: 0;
@@ -63,6 +65,9 @@
         gap: 2.5rem;
     }
 
+    
+    /* HEADER SECTION  */
+
     header{
         height: 115svh;
     }
@@ -78,16 +83,92 @@
     }
 
     .headerSocials {
-        position: fixed;
-        top: 20%;
-        left: 20px;
-        z-index: 11;
+        display: none;
     }
-      
-    .headerSocials a {
-        color: var(--color-gray-200);
-        background: var(--color-gray-900);
+
+    
+    /* ABOUT SECTION  */
+
+    .aboutContainer {
+        grid-template-columns: 1fr;
     }
+    
+    .aboutImage {
+        display: none;
+    }
+    
+    .aboutCards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .aboutDetails h1 {
+        text-align: center;
+    }
+
+    
+    /* SERVICES SECTION  */
+
+    .serviceContainer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .servicesRight {
+        padding: 0;
+        border: 0;
+    }
+
+    .servicesRight h3 {
+        margin-bottom: .6rem;
+    }
+
+    
+    /* PROHECTS SECTION  */
+    
+    .projectsCategories {
+        gap: 0.7rem;
+    }
+    
+    .projectsCategories li {
+        padding: 0.8rem 1rem;
+    }
+    
+    .projectsContainer {
+        gap: 1rem;
+    }
+    
+    
+    /* TESTIMONIALs SECTION  */
+
+    .swiper {
+        width: var(--container-width-sm);
+    }
+    
+    .swiper-wrapper {
+        padding-bottom: 3rem;
+    }
+    
+    .swiper-slide {
+        padding: 1.5rem;
+    }
+    
+    
+    /* CONTACT SECTION  */
+    
+    .contactContainer {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .contactList {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    
+  
+    
     
 }
 
