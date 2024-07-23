@@ -24,7 +24,16 @@ nav {
 }
 
 .navLogo p{
+    color: var(--color-gray-900);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navLogo p .logoSpan{
     font-size: 1.4rem;
+    color: #f4aa1fe5;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .navMenu {
