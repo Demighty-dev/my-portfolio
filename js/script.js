@@ -64,3 +64,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+//=========== NAV TOGGLE (small screen) ===========
+const navMenu = document.querySelector('.navMenu');
+const navOpenBtn = document.querySelector('.navToggleOpen');
+const navCloseBtn = document.querySelector('.navToggleClose');
+
+const openNavHandler = () => {
+  navMenu.style.display = 'flex';
+  navOpenBtn.style.display = 'none';
+  navCloseBtn.style.display = 'inline-block';
+}
+
+const closeNavHandler = () => {
+  navMenu.style.display = 'none';
+  navOpenBtn.style.display = 'inline-block';
+  navCloseBtn.style.display = 'none';
+}
+
+navOpenBtn.addEventListener('click', openNavHandler);
+navCloseBtn.addEventListener('click', closeNavHandler);
