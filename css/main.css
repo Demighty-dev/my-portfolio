@@ -37,8 +37,10 @@ nav {
 }
 
 .navMenu {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 3rem;
 }
 
@@ -47,16 +49,14 @@ nav {
     font-size: 1.1rem;
 }
 
+.navMenu a:hover{
+    color: var(--color-primary);
+    transition: all 0.4s ease-in-out;
+}
+
 .navToggleOpen,
 .navToggleClose {
     display: none;
-}
-
-.navThemeBtn {
-    color: var(--color-gray-900);
-    background: none;
-    font-size: 1.4rem;
-    cursor: pointer;
 }
 
 
@@ -92,11 +92,12 @@ header {
     margin-inline: auto;
 }
 
-.headerContent h4 {
+.headerContent h3 {
     margin-bottom: 0.7rem;
+    font-weight: 500;
 }
 
-.headerContent h4 span {
+.headerContent h3 span {
     color: var(--color-primary);
 }
 
@@ -109,37 +110,25 @@ header {
     gap: 1.5rem;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
 }
 
-.headerSocials {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.headerSocialIcons{
     display: flex;
-    flex-direction: column;
-    gap: 1.1rem;
-}
-
-.headerSocials a {
+    gap: 2rem;
+    padding: 15px 40px !important;
     background: var(--color-gray-200);
+}
+
+.headerSocialIcons i{
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+.headerSocialIcons i:hover {
     color: var(--color-gray-900);
-    padding: 0.5rem;
-    display: inline-block;
-    border-radius: var(--radius-4);
-    transition: var(--transition);
 }
 
-.headerSocials a:hover {
-    background: var(--color-primary);
-    color: var(--color-gray-100);
-    transform: translate(-0.5rem, 0.5rem);
-}
-
-.headerSocials :nth-child(odd) a:hover{
-    background: var(--color-primary);
-    color: var(--color-gray-100);
-    transform: translate(0.5rem, 0.5rem);
-}
 
 
 /*======================== ABOUT ========================*/
@@ -401,7 +390,7 @@ li.mixitup-control-active{
 
 /* ================= CONTACT =============== */
 .contact {
-    background: var(--color-primary) !important;
+    background: var(--darkred-clr) !important;
 }
 
 .contactHeading {
@@ -474,6 +463,29 @@ li.mixitup-control-active{
     color: var(--color-gray-900);
 }
 
+
+/* ===== Scroll Icon Here =====  */
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#scrollToTopBtn:hover {
+    opacity: .8;
+}
 
 
 /* =============================== CONTACT =============================== */

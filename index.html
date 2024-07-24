@@ -16,12 +16,15 @@
     <!-- ---- Remix icon ----- -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
+    <!-- For animation on scroll  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <title>My PortFolio Website</title>
 </head>
-<body class="dark">
+<body>
     <!-- ---- Nav Section Starts----- -->
      <nav>
         <div class="container navContainer">
@@ -38,7 +41,6 @@
             </ul>
 
             <div class="navButtons">
-                <button class="navThemeBtn"><i class='ri-moon-line'></i></button>
                 <button class="navToggleOpen"><i class="fa fa-bars"></i></button>
                 <button class="navToggleClose"><i class="fa fa-close"></i></button>
             </div>
@@ -49,24 +51,25 @@
     <!-- ---- Header Section Starts----- -->
      <header>
         <div class="container headerContainer">
-            <article class="headerImage">
-                <div><img src="./assets/images/header.jpg" alt="Header Image"></div>
+            <article class="headerImage" data-aos="fade-down" data-aos-delay="700">
+                <div><img src="./assets/images/about.jpg" alt="Header Image"></div>
             </article>
-            <article class="headerContent">
-                <h4>Hi, I'm <span>Jane Dramami</span>. And I'll</h4>
-                <h1>Get your business<br>online the right way</h1>
-                <p>Are you looking for a professional developer to put your business online? You've come to the right place! I've helped hundreds of business owners bring their ideas to life. Hire me today!</p>
-                <div class="headerCta">
-                    <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="#contact" class="btn">PortFolio</a>
+            <article class="headerContent" data-aos="fade-right">
+                <h3>🚀 Hello World!, <br><br> I'm <span class="myName">Adediran David Adekunle</span>. a dedicated Fullstack Developer on a mission to transform ideas into captivating, user-centric web experiences.
+                    I thrive on building websites and take pride in my ability to solve complex problems with innovative solutions. 
+                    
+                    <br> <br>
+                    <span class="myName">Let's create something amazing together!</span>
+                </h3>
+                <div class="headerCta" data-aos="fade-up">
+                    <a href="#contact" class="btn btn-primary">Contact me here <i class="fas fa-arrow-down"></i></a>
+                    <a href="./assets/images/resume.pdf" class="btn btn-primary" download target="_blank">Download CV <i class="fas fa-download"></i> </a>
+                    <ul class="headerSocialIcons  btn-sm">
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
                 </div>
             </article>
-            <ul class="headerSocials">
-                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-            </ul>
         </div>
     </header>
     <!-- ---- Header Section Ends----- -->
@@ -78,23 +81,23 @@
             <div class="aboutImage">
                 <img src="./assets/images/about.jpg" alt="About Image">
             </div>
-            <div class="aboutDetails">
+            <div class="aboutDetails" data-aos="fade-in" data-aos-delay="300">
                 <h1>About me</h1>
                 <div class="aboutCards">
                     <article class="aboutCard">
                         <i class="fas fa-award"></i>
                         <h4>Experience</h4>
-                        <small>8+ years</small>
+                        <small>2+ years</small>
                     </article>
                     <article class="aboutCard">
                         <i class="fas fa-project-diagram"></i>
                         <h4>Projects</h4>
-                        <small>220+ completed projects</small>
+                        <small>11+ completed projects</small>
                     </article>
                     <article class="aboutCard">
                         <i class="fas fa-users"></i>
                         <h4>Clients</h4>
-                        <small>100+ worldwide</small>
+                        <small>6+ NIgeria</small>
                     </article>
                 </div>
     
@@ -103,9 +106,9 @@
                 </p>
                 <p>
                     Hi, my name is John Dramani from Accra, Ghana. I'm a full-stack web developer with a Bachelors degree in Computer Science. My top priority is to get your business online the right way, giving you industry-standard design and all the functionality you need to operate smoothly online. Get in touch today with the details of your project let's get started! Check out my resume below!
-                </p>
-                <a href="./assets/images/resume.pdf" class="btn btn-primary" download target="_blank"><i class="fas fa-download"></i> Download CV</a>
-                
+                </p>                    
+                <a href="#contact" class="btn btn-primary">Let's Talk About Your Project</i></a>
+               
             </div>
         </div>
     </section>    
@@ -122,7 +125,7 @@
                     <span><i class="fa fa-desktop"></i></span>
                     <div>
                         <h3>Frontend</h3>
-                        <p>14 Projects</p>
+                        <p>8 Projects</p>
                     </div>
                 </li>
 
@@ -130,7 +133,7 @@
                     <span><i class="fa fa-server"></i></span>
                     <div>
                         <h3>Backend</h3>
-                        <p>11 Projects</p>
+                        <p>3 Projects</p>
                     </div>
                 </li>
 
@@ -138,11 +141,11 @@
                     <span><i class="fa fa-laptop-code"></i></span>
                     <div>
                         <h3>Fullstack</h3>
-                        <p>28 Projects</p>
+                        <p>3 Projects</p>
                     </div>
                 </li>
             </ul>
-            <article class="servicesRight">
+            <article class="servicesRight" data-aos="fade-in" data-aos-delay="200">
                 <h3>Frontend Development</h3>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore iusto provident illo, quidem quae laudantium eum labore eos tempora inventore.</p> -->
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed facilis perspiciatis, velit dolore, quos minima voluptatibus autem enim error quae laboriosam delectus vel sequi dicta tenetur, aliquam nulla harum! Illo, quam a hic dolores ducimus aut laboriosam praesentium quasi?</p> -->
@@ -163,7 +166,7 @@
             <li data-filter=".backend">Backend</li>
             <li data-filter=".fullstack">Fullstack</li>
         </ul>
-        <div class="container projectsContainer">
+        <div class="container projectsContainer" data-aos="fade-in">
             <article class="project mix fullstack" data-order="1">
                 <div class="projectImage">
                     <img src="./assets/images/project1.jpg" alt="Project Image One">
@@ -356,20 +359,20 @@
         </div>
         <div class="container contactContainer">
             <ul class="contactList">
-                <li><a href="mailto:support@egattor.com" class="contactList-item" target="_blank">
+                <li data-aos="fade-in"><a href="mailto:support@egattor.com" class="contactList-item" target="_blank">
                     <i class="fas fa-envelope"></i>
                 </a></li>
-                <li><a href="https://www.messenger.com/t/100087217880007" class="contactList-item" target="_blank">
+                <li data-aos="fade-in" data-aos-delay="150"><a href="https://www.messenger.com/t/100087217880007" class="contactList-item" target="_blank">
                     <i class="fab fa-facebook-messenger"></i>
                 </a></li>
-                <li><a href="https://wa.me/+233557097546" class="contactList-item" target="_blank">
+                <li data-aos="fade-in" data-aos-delay="300"><a href="https://wa.me/+233557097546" class="contactList-item" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                 </a></li>
-                <li><a href="tel:+233557097546" class="contactList-item" target="_blank">
+                <li data-aos="fade-in" data-aos-delay="450"><a href="tel:+233557097546" class="contactList-item" target="_blank">
                     <i class="fas fa-phone"></i>
                 </a></li>
             </ul>
-            <form action="https://formsubmit.co/4255f1b9e88a734ae0b546cd1d03b4a3" method="POST" class="contactForm">
+            <form action="https://formsubmit.co/4255f1b9e88a734ae0b546cd1d03b4a3" method="POST" class="contactForm" data-aos="fade-up" data-aos-delay="600">
                 <input type="text" placeholder="Full Name" name="Name">
                 <input type="email" placeholder="Email Address" name="Email">
                 <textarea rows="7" placeholder="Message" name="Message"></textarea>
@@ -379,7 +382,11 @@
     </section>    
     <!-- ---- Contact Section Ends----- -->
     
-
+    
+    <!-- ---- Scroll bar here ----- -->
+    <button id="scrollToTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
     
     <!-- ---- Footer Section Starts----- -->
     <footer>
@@ -403,11 +410,15 @@
     <!-- ---- Footer Section Ends----- -->
 
     
-    <script src="./js/data.js"></script>
-    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1500, offset: 80});
+    </script>
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
+
     
 </body>
 </html>

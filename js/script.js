@@ -95,23 +95,18 @@ if (window.innerWidth < 768) {
 }
 
 
-//======================= THEME TOGGLE (light & dark mode) =======================
-const themeBtn = document.querySelector('.navThemeBtn');
-themeBtn.addEventListener('click', () => {
-    let bodyClass = document.body.className;
-    if (!bodyClass) {
-        bodyClass = 'dark';
-        document.body.className = bodyClass;
-        // change toggle icon
-        themeBtn.innerHTML = "<i class='ri-sun-line'></i>";
-        //Save theme to local storage
-        window.localStorage.setItem('theme', bodyClass);
-    } else {
-        bodyClass = '';
-        document.body.className = bodyClass;
-        themeBtn.innerHTML = "<i class='ri-moon-line'></i>";
-        //Save theme to local storage
-        window.localStorage.setItem('theme', bodyClass);
-    }
-});
+// ===== SCROLL UP ICON HERE ==== 
 
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollToTopBtn.style.display = "flex";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+
+scrollToTopBtn.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

@@ -20,6 +20,9 @@
     }
 
     /* NAV SECTION  */
+    .navContainer {
+        padding-inline: .5rem;
+    }
 
     .navMenu {
         position: fixed;
@@ -59,7 +62,6 @@
     }
 
     .navButtons {
-        width: 100px;
         display: flex;
         align-items: center;
         gap: 2.5rem;
@@ -85,6 +87,11 @@
     .headerSocials {
         display: none;
     }
+
+    .headerCta {
+        flex-direction: column;
+    }
+    
 
     
     /* ABOUT SECTION  */
@@ -165,8 +172,13 @@
         flex-direction: row;
         justify-content: center;
     }
-
     
+    /* SCROOL ICON SECTION  */
+
+    #scrollToTopBtn {
+        right: 25px;
+        bottom: 30px;
+    }
   
     
     
