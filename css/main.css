@@ -31,7 +31,7 @@ nav {
 
 .navLogo p .logoSpan{
     font-size: 1.4rem;
-    color: #f4aa1fe5;
+    color: var(--darkred-clr);
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -389,8 +389,13 @@ li.mixitup-control-active{
 
 
 /* ================= CONTACT =============== */
-.contact {
-    background: var(--darkred-clr) !important;
+#contact {
+    background-image: url('../assets/images/bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px; 
+    color: white;
 }
 
 .contactHeading {

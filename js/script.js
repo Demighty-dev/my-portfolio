@@ -95,6 +95,9 @@ if (window.innerWidth < 768) {
 }
 
 
+
+
+
 // ===== SCROLL UP ICON HERE ==== 
 
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");

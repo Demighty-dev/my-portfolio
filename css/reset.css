@@ -149,23 +149,3 @@ section > h1 {
 section:nth-child(odd) {
     background: var(--color-gray-200);
 }
-
-
-
-
-::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #FAA236;
-  }
-  
