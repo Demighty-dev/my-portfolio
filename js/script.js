@@ -45,25 +45,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //====================== USING SWIPER JS (testimonial section) ======================
 
-document.addEventListener('DOMContentLoaded', function() {
-  const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    breakpoints: {
-      600: {
-          slidesPerView: 2
-      },
-      1024: {
-          slidesPerView: 3
-      }
-    }
-  });
-});
+// Here is the js code for the review scroll 
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const swiper = new Swiper('.swiper', {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true
+//     },
+//     breakpoints: {
+//       600: {
+//           slidesPerView: 2
+//       },
+//       1024: {
+//           slidesPerView: 3
+//       }
+//     }
+//   });
+// });
 
 
 //=========== NAV TOGGLE (small screen) ===========

@@ -278,6 +278,72 @@ header {
 }
 
 
+
+/*======================== Tech Stacks Section ========================*/
+#tech-stack {
+    background-image: url('../assets/images/bg-img.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.techStackContainer {
+    width: fit-content;
+    max-width: 62.5rem;
+    text-align: center;
+}
+
+.techStackContainer h1 {
+    color: #fff;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 4.4rem;
+}
+
+.skill-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 150px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.skill-card h3 {
+    margin: 10px 0 5px 0;
+    color: var(--darkred-clr);
+}
+
+.skill-card p {
+    margin: 0;
+    color: rgba(143, 34, 245, 0.923);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
 /*======================== PROJECTS ========================*/
 
 .projectsCategories {
