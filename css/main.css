@@ -363,7 +363,7 @@ header {
 }
 
 .projectsCategories li {
-    background: var(--color-gray-100);
+    background: var(--color-gray-200);
     padding: 0.6rem 1.5rem;
     border-radius: var(--radius-4);
     font-weight: 500;
@@ -385,13 +385,16 @@ li.mixitup-control-active{
 }
 
 .project {
-    background: var(--color-gray-100);
+    background: #f0f0f088;
     padding: 1.4rem;
-    border-radius: var(--radius-2);
     transition: var(--transition);
     /* mixitup animations */
     opacity: 0;
     animation: identifier 1.5s ease forwards;
+}
+.project:hover {
+    transform: scale( 1.03);
+    transition: var(--transition);
 }
 
 @keyframes identifier {
