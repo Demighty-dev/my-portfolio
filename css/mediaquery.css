@@ -98,6 +98,7 @@
 
     .aboutContainer {
         grid-template-columns: 1fr;
+        padding-inline: .6rem;
     }
     
     .aboutImage {
@@ -119,6 +120,8 @@
     .serviceContainer {
         grid-template-columns: 1fr;
         gap: 2rem;
+        padding-inline: .6rem;
+
     }
     
     .servicesRight {
@@ -166,6 +169,8 @@
     .contactContainer {
         grid-template-columns: 1fr;
         gap: 3rem;
+        justify-content: center;
+        align-items: center;
     }
     
     .contactList {

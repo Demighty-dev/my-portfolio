@@ -1,9 +1,8 @@
 const servicesData = [
   {
     title: "Frontend Development",
-    category: "frontend",
+    category: "frontend" ,
     description: [
-      '<br>',
       'I specialize in crafting visually appealing and user-friendly interfaces using the latest frontend technologies.',
       'From responsive designs to interactive elements, I ensure seamless user experiences across all devices.',
       'My expertise includes <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>, <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>Bootstrap</strong>.',

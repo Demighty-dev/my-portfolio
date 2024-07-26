@@ -26,7 +26,7 @@ nav {
 .navLogo p{
     color: var(--color-gray-900);
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .navLogo p .logoSpan{
@@ -93,6 +93,11 @@ header {
     margin-inline: auto;
 }
 
+.headerContent h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
 .headerContent h3 {
     margin-bottom: 0.7rem;
     font-weight: 500;
@@ -105,6 +110,7 @@ header {
 
 .headerContent p {
     margin: 0.8rem 0 2rem;
+    font-size: 1.1rem;
 }
 
 .headerCta {
@@ -197,7 +203,6 @@ header {
 .aboutCard h4 {
     margin: 1rem 0 0.8rem;
 }
-
 
 .aboutCard small {
     font-size: 0.7rem;
