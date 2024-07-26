@@ -31,7 +31,7 @@ nav {
 
 .navLogo p .logoSpan{
     font-size: 1.4rem;
-    color: var(--darkred-clr);
+    color: rgb(1, 1, 220);
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -51,7 +51,8 @@ nav {
 
 .navMenu a:hover{
     color: var(--color-primary);
-    transition: all 0.4s ease-in-out;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
 }
 
 .navToggleOpen,
@@ -116,7 +117,7 @@ header {
 .headerSocialIcons{
     display: flex;
     gap: 2rem;
-    padding: 15px 40px !important;
+    padding: 15px 60px !important;
     background: var(--color-gray-200);
 }
 
@@ -129,7 +130,16 @@ header {
     color: var(--color-gray-900);
 }
 
+.myName:first-of-type{
+    font-weight: 600;
+}
 
+.headerCta .headerBtn  {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*======================== ABOUT ========================*/
 .aboutContainer {
@@ -479,13 +489,13 @@ li.mixitup-control-active{
     width: 40px;
     height: 40px;
     background: var(--color-primary);
-    color: white;
+    color: #fff;
     border: none;
-    border-radius: 50%;
+    border-radius:  100% 100% 10px 10px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.3125rem;
 }
 
 #scrollToTopBtn:hover {
